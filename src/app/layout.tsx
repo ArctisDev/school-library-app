@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { Suspense } from "react";
+import AnalyticsClient from "@/components/AnalyticsClient";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -118,6 +120,9 @@ export default function RootLayout({
         />
       </head>
       <body className={`${poppins.variable} font-poppins antialiased min-h-screen bg-background text-foreground flex flex-col`}>
+        <Suspense fallback={null}>
+          <AnalyticsClient />
+        </Suspense>
         {children}
       </body>
     </html>
