@@ -33,7 +33,7 @@ export function Download() {
           <div className="hidden md:flex w-2/5 bg-slate-950 items-center justify-center p-12 relative overflow-hidden border-l border-slate-700">
             {/* Background image with low opacity */}
             <img
-              src="/images/ready-download.webp"
+              src="/images/ready-download.jpg"
               alt=""
               className="absolute inset-0 w-full h-full object-cover opacity-10"
             />
