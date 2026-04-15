@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Bloquear acesso a arquivos de sistema
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap
+# Sitemap: https://biblioteca.gastaovalle.com/sitemap.xml
+
+# Crawl-delay para ser respeitoso com o servidor
+Crawl-delay: 1
