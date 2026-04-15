@@ -1,5 +1,6 @@
 import { AWARD_DETAILS } from "@/domain/constants/content";
 import { Trophy } from "lucide-react";
+import Link from "next/link";
 import { Button } from "../ui/button";
 
 export function Award() {
@@ -18,20 +19,19 @@ export function Award() {
             {AWARD_DETAILS.title}
           </h2>
           <p className="max-w-2xl text-lg text-slate-300 text-balance">
-            {AWARD_DETAILS.description} Nascido de uma necessidade real na E.E. Professor Gastão Valle, o projeto se destacou pela sua capacidade de modernizar o ambiente escolar.
+            {AWARD_DETAILS.description} Nascido de uma necessidade real na E.E.
+            Professor Gastão Valle, o projeto se destacou pela sua capacidade de
+            modernizar o ambiente escolar.
           </p>
           <div className="mt-8">
-            <Button
-              className="border-brand-yellow/30 bg-brand-yellow/10 text-brand-yellow hover:bg-brand-yellow/20 hover:text-brand-yellow"
+            <Link
+              href="https://bh24horas.com.br/agencia-minas/estudantes-de-escola-estadual-desenvolvem-sistema-para-modernizar-biblioteca/"
+              target="_blank"
             >
-              <a
-                href="https://bh24horas.com.br/agencia-minas/estudantes-de-escola-estadual-desenvolvem-sistema-para-modernizar-biblioteca/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Button className="border-brand-yellow/30 bg-brand-yellow/10 text-brand-yellow hover:bg-brand-yellow/20 hover:text-brand-yellow">
                 Saiba Mais
-              </a>
-            </Button>
+              </Button>
+            </Link>
           </div>
         </div>
 
