@@ -22,21 +22,31 @@ export function Hero() {
             <p className="max-w-[42rem] leading-normal text-slate-400 sm:text-xl sm:leading-8 text-balance">
               Um sistema completo, gratuito e de código aberto projetado para ajudar outras escolas a modernizarem o controle de livros, alunos e empréstimos.
             </p>
-            <div className="flex flex-wrap gap-4 mt-4 w-full">
-              <Button size="lg" className="gap-2" asChild>
+            <div className="flex flex-wrap gap-4 mt-4 w-full justify-center">
+              <Button
+                size="lg"
+                className="flex-1 min-w-[160px] max-w-[260px] justify-center"
+                asChild
+              >
                 <Link href="#download">
                   Baixar para Windows
                 </Link>
                 <ArrowRight className="h-4 w-4 ml-3" />
               </Button>
-              <Button size="lg" variant="outline" asChild>
+
+              <Button
+                size="lg"
+                variant="outline"
+                className="flex-1 min-w-[160px] max-w-[260px] justify-center"
+                asChild
+              >
                 <Link href="#funcionalidades">Explorar Recursos</Link>
               </Button>
             </div>
           </div>
           
           {/* Real App Screenshot */}
-          <div className="mx-auto flex w-full max-w-[500px] items-center justify-center lg:max-w-none animate-float will-change-transform [backface-visibility:hidden]">
+          <div className="hidden lg:flex mx-auto w-full max-w-[500px] items-center justify-center lg:max-w-none animate-float will-change-transform [backface-visibility:hidden]">
             <div className="relative flex aspect-video w-full items-center justify-center rounded-xl border border-slate-700 bg-slate-800 shadow-2xl overflow-hidden ring-1 ring-white/10">
                {/* Window Title Bar */}
                <div className="absolute top-0 left-0 right-0 h-8 bg-[#0a1628] border-b border-slate-700 flex items-center px-4 justify-between z-10">
